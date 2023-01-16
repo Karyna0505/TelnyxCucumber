@@ -13,23 +13,23 @@ const downloadForm = '#pricing_download_form > div > div > div > div';
 
 class Pricing{
 
-    static visitSite(){
+    static visitSite() {
         cy.visit(URL);
         cy.contains('Accept and close')
             .click();
     }
     
-    static hoverPricing(){
+    static hoverPricing() {
         cy.contains('Pricing')
             .trigger('mouseover');
     }
 
-    static beVisiblePricing(){
+    static beVisiblePricing() {
         cy.get(pricingList)
             .invoke('show');
     }
 
-    static checkVoiceApi(){
+    static checkVoiceApi() {
         cy.get(voiceApi)
             .invoke('show')
             .click({force: true});
@@ -38,19 +38,19 @@ class Pricing{
             .and('have.text','Voice API Pricing');
     }
 
-    static selectCountry(){
+    static selectCountry() {
         cy.get(selectCountry)
             .click();
         cy.get(ukraine)
             .click();
     }
 
-    static checkNewPricing(){
+    static checkNewPricing() {
         cy.get(title)
             .should('have.text', 'Voice API Pricing for Ukraine');
     }
 
-    static checkElastic(){
+    static checkElastic() {
         cy.get(elastic)
             .invoke('show')
             .click({force: true});
@@ -59,15 +59,17 @@ class Pricing{
             .and('have.text','SIP Trunk Pricing');
     }
 
-    static scrollToTheDownloadBanner(){
-        cy.contains('Things you should know').click();
-        cy.contains('download our global price sheet').click();
-        cy.get(downloadForm).should('be.visible').and('have.text', 'Download SIP Trunking pricingInbound and outbound call pricing, per country and per destination for over 220 countries.I want to receive emails from TelnyxDownload CSV')
-            
-            
+    static scrollToTheDownloadBanner() {
+        cy.contains('Things you should know')
+            .click();
+        cy.contains('download our global price sheet')
+            .click();
+        cy.get(downloadForm)
+            .should('be.visible')
+            .and('have.text', 'Download SIP Trunking pricingInbound and outbound call pricing, per country and per destination for over 220 countries.I want to receive emails from TelnyxDownload CSV')         
     }
 
-    static inputData(name, lastname, emails){
+    static inputData(name, lastname, emails) { 
         cy.get(firstName)
             .type(name);
         cy.get(lastName)
@@ -76,12 +78,12 @@ class Pricing{
             .type(emails);
     }
 
-    static clickButton(){
+    static clickButton() {
         cy.contains('Download CSV')
             .click();
     }
 
-    static checkMessage(){
+    static checkMessage() {
         cy.get(message)
             .should('be.visible')
             .and('have.text', 'Thank you. We\'ll email you pricing right away!');

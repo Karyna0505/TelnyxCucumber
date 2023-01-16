@@ -23,235 +23,234 @@ const calculatorTitle = 'main > div > div > div > div > span';
 
 class NavMenuPage{
 
-    static visitSite(){
+    static visitSite() {
         cy.visit(URL);
         cy.contains('Accept and close')
-        .click();
+            .click();
     }
 
-    static hoverPricing(){
+    static hoverPricing() {
         cy.contains('Pricing')
-        .trigger('mouseover');
+            .trigger('mouseover');
     }
 
-    static beVisiblePricing(){
+    static beVisiblePricing() {
         cy.get(pricingList)
-        .invoke('show');
+            .invoke('show');
     }
 
-    static checkElastic(){
+    static checkElastic() {
         cy.get(elastic)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','SIP Trunk Pricing');
+            .should('be.visible')
+            .and('have.text','SIP Trunk Pricing');
     }
 
 
-    static checkVoiceApi(){
+    static checkVoiceApi() {
         cy.get(voiceApi)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Voice API Pricing');
+            .should('be.visible')
+            .and('have.text','Voice API Pricing');
     }
 
-    static checkSmsApi(){
+    static checkSmsApi() {
         cy.get(sms)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Messaging pricing');
+            .should('be.visible')
+            .and('have.text','Messaging pricing');
     }
 
-    static checkFax(){
+    static checkFax() {
         cy.get(fax)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Programmable Fax API Pricing');
+            .should('be.visible')
+            .and('have.text','Programmable Fax API Pricing');
     }
 
-    static checkWireless(){
+    static checkWireless() {
         cy.get(wireless)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','IoT SIM Card Data Plans & Pricing');
+            .should('be.visible')
+            .and('have.text','IoT SIM Card Data Plans & Pricing');
     }
 
-    static checkVerifyApi(){
+    static checkVerifyApi() {
         cy.get(verifyApi)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Verify API Pricing');
+            .should('be.visible')
+            .and('have.text','Verify API Pricing');
     }
 
-    static checkService(){
+    static checkService() {
         cy.get(service)
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','ID Services & Data pricing');
+            .should('be.visible')
+            .and('have.text','ID Services & Data pricing');
     }
 
-    static hoverCompany(){
+    static hoverCompany() {
         cy.contains('Company')
-        .trigger('mouseover');
+            .trigger('mouseover');
     }
 
-    static beVisibleCompany(){
+    static beVisibleCompany() {
         cy.get(companyList)
-        .invoke('show');
+            .invoke('show');
     }
 
-    static checkAboutTelnyx(){
+    static checkAboutTelnyx() {
         cy.contains('About Telnyx')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title2)
-        .should('be.visible')
-        .and('have.text','Unlocking the power of intelligent connectivity');
+            .should('be.visible')
+            .and('have.text','Unlocking the power of intelligent connectivity');
     }
 
-    static checkCareers(){
+    static checkCareers() {
         cy.contains('Careers')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get('header > h1')
-        .should('be.visible')
-        .and('have.text','We\'re building the future of communications.');
+            .should('be.visible')
+            .and('have.text','We\'re building the future of communications.');
     }
 
-    static checkPartners(){
+    static checkPartners() {
         cy.contains('Partners')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title2)
-        .should('be.visible')
-        .and('have.text','Build. Scale. Connect.  with Telnyx Partner Program');
+            .should('be.visible')
+            .and('have.text','Build. Scale. Connect.  with Telnyx Partner Program');
     }
 
-    static checkIntegrations(){
+    static checkIntegrations() {
         cy.contains('Integrations')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Connect Telnyx to the tools you\'re already using');
+            .should('be.visible')
+            .and('have.text','Connect Telnyx to the tools you\'re already using');
     }
 
-    static hoverResources(){
+    static hoverResources() {
         cy.contains('Resources')
-        .trigger('mouseover');
+            .trigger('mouseover');
     }
 
-    static beVisibleResource(){
+    static beVisibleResource() {
         cy.get(resourceList)
-        .invoke('show');
+            .invoke('show');
     }
 
-    static checkDeveloperDocs(){
+    static checkDeveloperDocs() {
         cy.contains('Developer Docs')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(docsTitle)
-        .should('be.visible')
-        .and('have.text','Telnyx API Documentation');
+            .should('be.visible')
+            .and('have.text','Telnyx API Documentation');
         cy.go('back');
     }
 
-    static checkCustomerStories(){
+    static checkCustomerStories() {
         cy.contains('Customer Stories')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(customersTitle)
-        .should('be.visible')
-        .and('have.text','You’re in good company');
+            .should('be.visible')
+            .and('have.text','You’re in good company');
     }
 
-    static checkBlog(){
+    static checkBlog() {
         cy.contains('Blog')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(blogTitle)
-        .should('be.visible')
-        .and('have.text','Blog');
+            .should('be.visible')
+            .and('have.text','Blog');
     }
 
-    static checkCarrier(){
+    static checkCarrier() {
         cy.contains('Bring Your Own Carrier')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Bring Your Own Carrier (BYOC)');
+            .should('be.visible')
+            .and('have.text','Bring Your Own Carrier (BYOC)');
     }
 
-    static checkControl(){
+    static checkControl() {
         cy.contains('Mission Control')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','Mission Control Portal');
+            .should('be.visible')
+            .and('have.text','Mission Control Portal');
     }
 
-    static checkCalculator(){
+    static checkCalculator() {
         cy.contains('Savings Calculator')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(calculatorTitle)
-        .should('be.visible')
-        .and('have.text','Savings CalculatorHow much will you save switching from Twilio?');
+            .should('be.visible')
+            .and('have.text','Savings CalculatorHow much will you save switching from Twilio?');
     }
 
-    static hoverSolutions(){
+    static hoverSolutions() {
         cy.contains('Solutions')
-        .trigger('mouseover');
+            .trigger('mouseover');
     }
 
-    static beVisibleSolutions(){
+    static beVisibleSolutions() {
         cy.get(solutionsList)
-        .invoke('show');
+            .invoke('show');
     }
 
     static checkPlatforms() {
         cy.contains('Customer Engagement Platforms')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','Customer Engagement Platforms');
+            .should('be.visible')
+            .and('have.text','Customer Engagement Platforms');
     }
     
     static checkBusiness() {
         cy.contains('Business to Consumer Brands')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','Business to Consumer Brands');
+            .should('be.visible')
+            .and('have.text','Business to Consumer Brands');
     }
 
     static checkManaged() {
         cy.contains('Managed Service Providers')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','Managed Service Providers');
+            .should('be.visible')
+            .and('have.text','Managed Service Providers');
     }
     
-
 }
 
 export default NavMenuPage;

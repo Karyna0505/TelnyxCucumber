@@ -18,20 +18,20 @@ const liveChatLink = 'footer #intercom_launcher';
 
 class Resource{
 
-    static visitSite(){
+    static visitSite() {
         cy.visit(URL);
         cy.contains('Accept and close')
             .click();
     }
 
-    static hoverResources(){
+    static hoverResources() {
         cy.contains('Resources')
             .trigger('mouseover');
         cy.get(resourceList)
             .invoke('show');
     }
 
-    static clickAndCheckBlog(){
+    static clickAndCheckBlog() {
         cy.contains('Blog')
             .invoke('show')
             .click({force: true});
@@ -40,35 +40,35 @@ class Resource{
             .and('have.text','Blog');
     }
 
-    static inputSearchValidData(text){
+    static inputSearchValidData(text) {
         cy.get(searchField)
             .type(text)
             .type('{enter}');
     }
 
-    static checkResult(){
+    static checkResult() {
         cy.get(searchResult)
             .and('have.text', 'Search results for "wireless"');
     }
 
-    static inputSearchInvalidData(randomText){
+    static inputSearchInvalidData(randomText) {
         cy.get(searchField)
             .type(randomText)
             .type('{enter}');
     }
 
-    static searchNoResulta(){
+    static searchNoResulta() {
         cy.get(searchNoResult)
             .should('contain', 'No results found for');
     }
 
-    static scrollDownToTheBanner(){
+    static scrollDownToTheBanner() {
         cy.contains('Stay Connected')
             .scrollIntoView()
             .should('be.visible');
     }
 
-    static subscribe(email){
+    static subscribe(email) {
         cy.get(emailField)
             .type(email);
         cy.contains('Subscribe')
@@ -76,25 +76,26 @@ class Resource{
 
     }
 
-    static checkIncorrectSubscribe(){
+    static checkIncorrectSubscribe() {
         cy.get(messageError)
             .should('be.visible')
             .and('have.text', 'Please enter a valid email address.')
     }
 
-    static scrollToTheDownloadBanner(){
+    static scrollToTheDownloadBanner() {
         cy.contains('Download our Twilio alternative eBook')
             .scrollIntoView()
             .should('be.visible');
     }
 
-    static clickGetButton(){
+    static clickGetButton() {
         cy.contains('Get the eBook')
             .click();
-        cy.get(title).should('be.visible');
+        cy.get(title)
+            .should('be.visible');
     }
 
-    static fillForm(data, emails){
+    static fillForm(data, emails) {
         cy.get(firstName)
             .type(data);
         cy.get(lastName)
@@ -107,29 +108,30 @@ class Resource{
             .click();
     }
 
-    static checkGettingBook(){
+    static checkGettingBook() {
         cy.get(acceptMessage)
             .should('be.visible')
             .and('have.text', 'Thank you!\n\nCheck your inbox for an email from Mark (mark.morse@telnyx.com). If it is not there check your spam folder and make sure to add Telnyx to your contact list in Gmail, Apple Mail or Outlook.If you don\'t receive your content in the next hour, please don\'t hesitate to reach out to Mark at mark.morse@telnyx.com.GmailApple MailOutlook');
     }
 
-    static clickCheckDeveloperDocs(){
+    static clickCheckDeveloperDocs() {
         cy.contains('Developer Docs')
-        .invoke('show')
-        .click({force: true});
+            .invoke('show')
+            .click({force: true});
         cy.get(docsTitle)
-        .should('be.visible')
-        .and('have.text','Telnyx API Documentation');
+            .should('be.visible')
+            .and('have.text','Telnyx API Documentation');
     }
 
-    static scrollDownToTheFooter(){
+    static scrollDownToTheFooter() {
         cy.scrollTo('bottom');
-        cy.get('footer').should('be.visible');
+        cy.get('footer')
+            .should('be.visible');
     }
 
-    
-    static checkLiveChatLink(){
-        cy.get(liveChatLink).should('be.visible')
+    static checkLiveChatLink() {
+        cy.get(liveChatLink)
+            .should('be.visible')
             .and('have.attr', 'href')
             .and('include', 'mailto:smv2mtj6@intercom-mail.com');
     }

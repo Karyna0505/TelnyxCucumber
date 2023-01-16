@@ -46,284 +46,287 @@ const lawRequestTitle = '#header > h2';
 
 class Footer {
 
-    static visitSite(){
+    static visitSite() {
         cy.visit(URL);
         cy.contains('Accept and close')
-        .click();
+            .click();
     }
 
-    static scrollDownToTheFooter(){
+    static scrollDownToTheFooter() {
         cy.scrollTo('bottom');
-        cy.get(footer).should('be.visible');
+        cy.get(footer)
+            .should('be.visible');
     }
 
-    static checkElastic(){
+    static checkElastic() {
         cy.get(elastic)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Leading Global SIP Trunking Provider');
+            .should('be.visible')
+            .and('have.text','Leading Global SIP Trunking Provider');
         cy.go('back');
     }
 
-    static checkCallControl(){
+    static checkCallControl() {
         cy.get(callControl)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Voice API');
+            .should('be.visible')
+            .and('have.text','Voice API');
         cy.go('back');
     }
 
-    static checkProgrammable(){
+    static checkProgrammable() {
         cy.get(programmable)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','SMS API');
+            .should('be.visible')
+            .and('have.text','SMS API');
         cy.go('back');
     }
 
-    static checkFaxing(){
+    static checkFaxing() {
         cy.get(faxing)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Reliably transmit documents with our Programmable Fax API over Private IP');
+            .should('be.visible')
+            .and('have.text','Reliably transmit documents with our Programmable Fax API over Private IP');
         cy.go('back');
     }
 
-    static checkWireless(){
+    static checkWireless() {
         cy.get(wireless)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','IoT SIM Cards for Global Connectivity');
+            .should('be.visible')
+            .and('have.text','IoT SIM Cards for Global Connectivity');
         cy.go('back');
     }
 
-    static checkNumber(){
+    static checkNumber() {
         cy.get(number)
-        .click();
+            .click();
         cy.get(title2)
-        .should('be.visible')
-        .and('have.text','Know the details behind every number with Phone Number Lookup');
+            .should('be.visible')
+            .and('have.text','Know the details behind every number with Phone Number Lookup');
         cy.go('back');
     }
 
-    static checkGlobal(){
+    static checkGlobal() {
         cy.get(global)
-        .click();
+            .click();
         cy.get(title2)
-        .should('be.visible')
-        .and('have.text','Buy business numbers on demand.');
+            .should('be.visible')
+            .and('have.text','Buy business numbers on demand.');
         cy.go('back');
     }
     
-    static checkVerifyApi(){
+    static checkVerifyApi() {
         cy.get(verifyApi)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Verify API: User authentication made easy');
+            .should('be.visible')
+            .and('have.text','Verify API: User authentication made easy');
         cy.go('back');
     }
 
-    static checkAllProducts(){
+    static checkAllProducts() {
         cy.get(allProducts)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Products');
+            .should('be.visible')
+            .and('have.text','Products');
         cy.go('back');
     }
 
-    static checkDeveloper(){
+    static checkDeveloper() {
         cy.get(developer)
-        .invoke('removeAttr', 'target')
-        .click({ multiple: true });
+            .invoke('removeAttr', 'target')
+            .click({ multiple: true });
         cy.get(developerTitle)
-        .and('have.text','Telnyx API Documentation');
+            .and('have.text','Telnyx API Documentation');
         cy.go('back');
     }
 
-    static checkBlog(){
+    static checkBlog() {
         cy.get(blog)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Blog');
+            .should('be.visible')
+            .and('have.text','Blog');
         cy.go('back');
     }
 
-    static checkResource(){
+    static checkResource() {
         cy.get(resource)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Resource Hub');
+            .should('be.visible')
+            .and('have.text','Resource Hub');
         cy.go('back');
     }
 
-    static checkRelease(){
+    static checkRelease() {
         cy.get(release)
-        .click();
+            .click();
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','Release Notes');
+            .should('be.visible')
+            .and('have.text','Release Notes');
         cy.go('back');
     }
 
-    static checkElasticPricing(){
+    static checkElasticPricing() {
         cy.get(elasticPricing)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','SIP Trunk Pricing');
+            .should('be.visible')
+            .and('have.text','SIP Trunk Pricing');
         cy.go('back');
     }
 
-    static checkSms(){
+    static checkSms() {
         cy.get(sms)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Messaging pricing');
+            .should('be.visible')
+            .and('have.text','Messaging pricing');
         cy.go('back');
     }
 
-    static checkVoice(){
+    static checkVoice() {
         cy.get(voice)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Voice API Pricing');
+            .should('be.visible')
+            .and('have.text','Voice API Pricing');
         cy.go('back');
     }
 
-    static checkWirelessPricing(){
+    static checkWirelessPricing() {
         cy.get(wirelessPricing)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','IoT SIM Card Data Plans & Pricing');
+            .should('be.visible')
+            .and('have.text','IoT SIM Card Data Plans & Pricing');
         cy.go('back');
     }
 
-    static checkAbout(){
+    static checkAbout() {
         cy.get(about)
-        .click();
+            .click();
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','Unlocking the power of intelligent connectivity');
+            .should('be.visible')
+            .and('have.text','Unlocking the power of intelligent connectivity');
         cy.go('back');
     }
 
-    static checkCareers(){
+    static checkCareers() {
         cy.get(careers)
-        .click();
+            .click();
         cy.get(title4)
-        .should('be.visible')
-        .and('have.text','We\'re building the future of communications.');
+            .should('be.visible')
+            .and('have.text','We\'re building the future of communications.');
         cy.go('back');
     }
 
-    static checkData(){
+    static checkData() {
         cy.get(data)
-        .click();
+            .click();
         cy.get(title)
-        .should('be.visible')
-        .and('have.text','Data & Privacy');
+            .should('be.visible')
+            .and('have.text','Data & Privacy');
         cy.go('back');
     }
 
-    static checkSupport(){
+    static checkSupport() {
         cy.get(support)
-        .invoke('removeAttr', 'target')
-        .click();
-        cy.url().should('include','support');  
+            .invoke('removeAttr', 'target')
+            .click();
+        cy.url()
+            .should('include','support');  
         cy.go('back');
     }
 
-    static checkReport(){
+    static checkReport() {
         cy.get(report)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Report Abuse');
+            .should('be.visible')
+            .and('have.text','Report Abuse');
         cy.go('back');
    }
 
-   static checkPrivacy(){
+   static checkPrivacy() {
         cy.get(privacy)
-        .invoke('removeAttr', 'target')
-        .click();
+            .invoke('removeAttr', 'target')
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Privacy Policy');
+            .should('be.visible')
+            .and('have.text','Privacy Policy');
         cy.go('back');
     }
 
-    static checkCookie(){
+    static checkCookie() {
         cy.get(cookie)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Telnyx Cookie Policy');
+            .should('be.visible')
+            .and('have.text','Telnyx Cookie Policy');
         cy.go('back');
     }
 
-    static checkCookie(){
+    static checkCookie() {
         cy.get(cookie)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Telnyx Cookie Policy');
+            .should('be.visible')
+            .and('have.text','Telnyx Cookie Policy');
         cy.go('back');
     }
 
-    static checkAcceptable(){
+    static checkAcceptable() {
         cy.get(acceptable)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','TELNYX ACCEPTABLE USE POLICY');
+            .should('be.visible')
+            .and('have.text','TELNYX ACCEPTABLE USE POLICY');
         cy.go('back');
     }
 
-    static checkWebsiteConditions(){
+    static checkWebsiteConditions() {
         cy.get(website)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Terms and Conditions');
+            .should('be.visible')
+            .and('have.text','Terms and Conditions');
         cy.go('back');
     }
 
-    static checkLawRequest(){
+    static checkLawRequest() {
         cy.get(lawRequest)
-        .invoke('removeAttr', 'target')
-        .click();
-        cy.get('iframe').should(iframe => expect(iframe.contents().find(lawRequestTitle)).to.have.text('Telnyx Subpoena / Law Enforcement Request'));
+            .invoke('removeAttr', 'target')
+            .click();
+        cy.get('iframe')
+            .should(iframe => expect(iframe.contents().find(lawRequestTitle)).to.have.text('Telnyx Subpoena / Law Enforcement Request'));
         cy.go('back');
     }
 
-    static checkSignUp(){
+    static checkSignUp() {
         cy.get(signUp)
-        .click();
+            .click();
         cy.get(title3)
-        .should('be.visible')
-        .and('have.text','Create a free account');
+            .should('be.visible')
+            .and('have.text','Create a free account');
         cy.go('back');
     }
 
-    static checkLoginIn(){
+    static checkLoginIn() {
         cy.get(loginIn)
-        .invoke('removeAttr', 'target')
-        .click();
+            .invoke('removeAttr', 'target')
+            .click();
         cy.get('div.hLpuFd')
-        .should('be.visible')
-        .and('have.text','Log in');
+            .should('be.visible')
+            .and('have.text','Log in');
         cy.go('back');
     }
 }
