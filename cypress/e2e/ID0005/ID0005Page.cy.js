@@ -39,6 +39,7 @@ const title = 'h1 > span';
 const title2 = 'h1 > span > strong';
 const title3 = 'main div > h1';
 const title4 = 'header > h1';
+const title5 = '#__next section > header > div';
 const developerTitle = '#telnyx-api-v2-documentation';
 const lawRequestTitle = '#header > h2';
 
@@ -223,9 +224,9 @@ class Footer {
     static checkCareers() {
         cy.get(careers)
             .click();
-        cy.get(title4)
+        cy.get(title5)
             .should('be.visible')
-            .and('have.text','Shape Your Future at Telnyx');
+            .and('have.text','careers at telnyx');
         cy.go('back');
     }
 
