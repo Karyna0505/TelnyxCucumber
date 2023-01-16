@@ -126,9 +126,9 @@ class NavMenuPage{
         cy.contains('Careers')
             .invoke('show')
             .click({force: true});
-        cy.get('header > h1')
+        cy.get('main  h1')
             .should('be.visible')
-            .and('have.text','We\'re building the future of communications.');
+            .and('have.text','Shape Your Future at Telnyx');
     }
 
     static checkPartners() {

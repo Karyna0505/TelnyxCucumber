@@ -33,7 +33,7 @@ Then('Checking all links should be clickable and I should see opened new pages',
     Footer.checkSupport();
     Footer.checkReport();
     Footer.checkPrivacy();
-    Footer. checkCookie();
+    Footer.checkCookie();
     Footer.checkAcceptable();
     Footer.checkWebsiteConditions();
     Footer.checkLawRequest();

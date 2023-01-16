@@ -37,7 +37,7 @@ const loginIn = 'div:nth-child(5) > div > ul > li:nth-child(2) > a';
 
 const title = 'h1 > span';
 const title2 = 'h1 > span > strong';
-const title3 = 'main  div > h1';
+const title3 = 'main div > h1';
 const title4 = 'header > h1';
 const developerTitle = '#telnyx-api-v2-documentation';
 const lawRequestTitle = '#header > h2';
@@ -61,7 +61,7 @@ class Footer {
     static checkElastic() {
         cy.get(elastic)
             .click();
-        cy.get(title)
+        cy.get(title2)
             .should('be.visible')
             .and('have.text','Leading Global SIP Trunking Provider');
         cy.go('back');
@@ -88,7 +88,7 @@ class Footer {
     static checkFaxing() {
         cy.get(faxing)
             .click();
-        cy.get(title)
+        cy.get(title2)
             .should('be.visible')
             .and('have.text','Reliably transmit documents with our Programmable Fax API over Private IP');
         cy.go('back');
@@ -225,7 +225,7 @@ class Footer {
             .click();
         cy.get(title4)
             .should('be.visible')
-            .and('have.text','We\'re building the future of communications.');
+            .and('have.text','Shape Your Future at Telnyx');
         cy.go('back');
     }
 
@@ -263,15 +263,6 @@ class Footer {
         cy.get(title3)
             .should('be.visible')
             .and('have.text','Privacy Policy');
-        cy.go('back');
-    }
-
-    static checkCookie() {
-        cy.get(cookie)
-            .click();
-        cy.get(title3)
-            .should('be.visible')
-            .and('have.text','Telnyx Cookie Policy');
         cy.go('back');
     }
 
