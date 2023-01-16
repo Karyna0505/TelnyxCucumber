@@ -221,7 +221,7 @@ class Footer {
 
     static checkCareers(){
         cy.get(careers)
-        .click({force: true});
+        .click();
         cy.get(title4)
         .should('be.visible')
         .and('have.text','We\'re building the future of communications.');
