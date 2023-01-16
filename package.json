@@ -6,8 +6,8 @@
   "scripts": {
     "test": "cypress open",
     "cy.tests": "cypress run",
-    "config1": "cypress run --config-file cypress.config.js",
-    "config2": "cypress run --config-file different.config.js"
+    "config1": "cypress run --config-file cypress.config.js --browser chrome",
+    "config2": "cypress run --config-file different.config.js --browser chrome"
 
   },
   "author": "Karyna",

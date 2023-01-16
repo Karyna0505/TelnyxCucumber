@@ -11,7 +11,7 @@ module.exports = defineConfig({
     viewportHeight: 1050,
     viewportWidth: 1680,
     
-
+ 
     e2e: {
         specPattern: "**/*.feature",
         setupNodeEvents(on, config) {
