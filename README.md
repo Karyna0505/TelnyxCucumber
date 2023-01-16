@@ -6,7 +6,7 @@ Cypress-Cucumber Test runner "TELNYX" project
 
 ## Setup
 ### Install software and check out the project
- - Download and install Node.JS ( at least v18.12.1)
+ - Download and install Node.JS (at least v18.12.1)
  - Clone and checkout the github project
 
         git clone https://github.com/Karyna0505/TelnyxCucumber
