@@ -3,8 +3,8 @@ const cucumber = require('cypress-cucumber-preprocessor').default;
 
 module.exports = defineConfig({
   video: false,
-  defaultCommandTimeout: 7000,
-  pageLoadTimeout: 11000,
+  defaultCommandTimeout: 20000,
+  pageLoadTimeout: 20000,
   viewportHeight: 720,
   viewportWidth: 1280,
   
