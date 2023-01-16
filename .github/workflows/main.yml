@@ -1,0 +1,26 @@
+name: Telnyx Cucumber Testing 
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          project: ./
+          browser: chrome
+          build: npm install
+          start: npm run test
+          wait-on: "https://telnyx.com/"
+        env:
+            GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
+          
