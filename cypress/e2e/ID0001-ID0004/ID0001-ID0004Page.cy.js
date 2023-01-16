@@ -125,7 +125,7 @@ class NavMenuPage{
     static checkCareers() {
         cy.contains('Careers')
             .invoke('show')
-            .click({force: true});
+            .click();
         cy.get('header > h1')
             .should('be.visible')
             .and('have.text','We\'re building the future of communications.');
