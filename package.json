@@ -1,0 +1,25 @@
+{
+  "name": "telnyxcucumber",
+  "version": "1.0.0",
+  "description": "Cypress-Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cy.tests": "cypress run",
+    "config1": "cypress run --config-file cypress.config.js",
+    "config2": "cypress run --config-file different.config.js"
+
+  },
+  "author": "Karyna",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./cypress/e2e"
+  }
+
+    
+}
