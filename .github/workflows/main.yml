@@ -19,7 +19,7 @@ jobs:
           project: ./
          
           build: npm install
-          start: npm run cy.tests
+          start: npm run test
           wait-on: "https://telnyx.com/"
         env:
             GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
