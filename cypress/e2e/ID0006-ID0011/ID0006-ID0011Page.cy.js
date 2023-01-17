@@ -115,11 +115,9 @@ class Resource{
         cy.get(buttonSend)
             .click({force: true})
             .wait(500);
-    }
-
-    static checkGettingBook() {
         cy.get(acceptMessage).should('have.text', 'Thank you!');
     }
+
 
     static clickCheckDeveloperDocs() {
         cy.contains('Developer Docs')
