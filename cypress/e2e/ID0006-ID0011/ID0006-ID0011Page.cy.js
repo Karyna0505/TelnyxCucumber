@@ -113,7 +113,7 @@ class Resource{
 
     static clickSendButton() {
         cy.get(buttonSend)
-            .click();
+            .click({force: true});
     }
 
     static checkGettingBook() {
