@@ -18,7 +18,9 @@ module.exports = defineConfig({
   e2e: {
    
     specPattern: "**/*.feature",
-    
+    browsers: config.browsers.filter(
+      (b) => b.name === 'electron'
+    ),
     setupNodeEvents(on, config) {
       on("file:preprocessor", cucumber())
       
