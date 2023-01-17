@@ -20,7 +20,7 @@ jobs:
           project: ./
           browser: chrome
           build: npm install
-          start: npm run test
+          start: npm run config1
           wait-on: "https://telnyx.com/"
         env:
             GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
