@@ -20,10 +20,10 @@ Scenario:ID_0009 Checking subscription option on the "Blog" page with invalid em
         When Click the "Blog" link 
         Then Scroll down to the "Stay Connected" block. Subscribe to the newsletter with invalid mail.
 
-# Scenario:ID_00010 Checking getting eBook on the "Blog" page.
-#         Given I open site and hover "Resources" link
-#         When Click the "Blog" link. Scroll down to the "Get the eBook" banner.
-#         Then Filling the form and get the e-book.
+Scenario:ID_00010 Checking getting eBook on the "Blog" page.
+        Given I open site and hover "Resources" link
+        When Click the "Blog" link. Scroll down to the "Get the eBook" banner.
+        Then Filling the form and get the e-book.
 
 Scenario:ID_00011 Checking "Live chat" form on the Telnyx Developers page.
         Given I open site and hover "Resources" link

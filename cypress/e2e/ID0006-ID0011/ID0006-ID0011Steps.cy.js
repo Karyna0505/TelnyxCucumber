@@ -39,12 +39,13 @@ Then('Scroll down to the "Stay Connected" block. Subscribe to the newsletter wit
 
 When('Click the "Blog" link. Scroll down to the "Get the eBook" banner.', () => {
     Resource.clickAndCheckBlog();
-    // Resource.scrollToTheDownloadBanner();
+
     Resource.clickGetButton();
 })
 
 Then('Filling the form and get the e-book.', () => {
-    Resource.fillForm(randomText, email);
+    Resource.fillForm('User','User','UserCompany', email);
+    Resource.clickSendButton();
     Resource.checkGettingBook();
 })
 

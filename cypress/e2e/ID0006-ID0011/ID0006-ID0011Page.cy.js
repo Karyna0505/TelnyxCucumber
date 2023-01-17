@@ -6,12 +6,12 @@ const searchResult = '#articles > div.ijJVSH';
 const searchNoResult = '#__next #articles div';
 const emailField = '#Email';
 const messageError = '#Email_error';
-const title = 'main div > div > h1';
+const title = 'main h1';
 const firstName = '#FirstName';
 const lastName = '#LastName';
 const companyName = '#Company';
 const email = '#Email';
-const acceptMessage = '#lpeCDiv_109732 span';
+const acceptMessage = '#lpeCDiv_109732 > span > div:nth-child(1)';
 const docsTitle = 'main > h1';
 const liveChatLink = 'footer #intercom_launcher';
 
@@ -92,27 +92,33 @@ class Resource{
         cy.contains('Get the eBook')
             .click();
         cy.get(title)
-            .should('be.visible')
-            .wait(1000);
+            .should('have.text','Twilio Alternative eBook Download');
     }
 
-    static fillForm(data, emails) {
+    static fillForm(data, data1, data3, emails) {
         cy.get(firstName)
-            .type(data);
+            .type(data)
+            .should('have.value', data);
         cy.get(lastName)
-            .type(data);
+            .type(data1)
+            .should('have.value', data1);
         cy.get(companyName)
-            .type(data);
+            .type(data3)
+            .should('have.value', data3);
         cy.get(email)
-            .type(emails);
+            .type(emails)
+            .should('have.value', emails);
+        
+    }
+
+    static clickSendButton() {
         cy.contains('Send my Content')
-            .click();
+            .click({force: true});
     }
 
     static checkGettingBook() {
         cy.get(acceptMessage)
-            .should('be.visible')
-            .and('have.text', 'Thank you!\n\nCheck your inbox for an email from Mark (mark.morse@telnyx.com). If it is not there check your spam folder and make sure to add Telnyx to your contact list in Gmail, Apple Mail or Outlook.If you don\'t receive your content in the next hour, please don\'t hesitate to reach out to Mark at mark.morse@telnyx.com.GmailApple MailOutlook');
+            .should('have.text', 'Thank you!');
     }
 
     static clickCheckDeveloperDocs() {
