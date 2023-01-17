@@ -19,10 +19,12 @@ jobs:
         with:
           project: ./
           build: npm install
-          start: npm run config1 && npm run clear && npm run html-report
+          browser: electron
           wait-on: "https://telnyx.com/"
         env:
             GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
+      - name: Generate reports
+        run: npm run clear && npm run html-report
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
