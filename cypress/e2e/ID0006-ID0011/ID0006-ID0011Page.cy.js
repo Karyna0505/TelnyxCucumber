@@ -113,11 +113,12 @@ class Resource{
 
     static clickSendButton() {
         cy.get(buttonSend)
-            .click({force: true});
+            .click({force: true})
+            .wait(500);
     }
 
     static checkGettingBook() {
-        cy.url().should('include', 'email_follow_up');
+        cy.get(acceptMessage).should('have.text', 'Thank you!');
     }
 
     static clickCheckDeveloperDocs() {
