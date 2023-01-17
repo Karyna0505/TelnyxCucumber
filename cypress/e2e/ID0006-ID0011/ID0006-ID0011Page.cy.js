@@ -117,8 +117,7 @@ class Resource{
     }
 
     static checkGettingBook() {
-        cy.get(acceptMessage)
-            .should('have.text', 'Thank you!');
+        cy.url().should('include', 'email_follow_up');
     }
 
     static clickCheckDeveloperDocs() {
