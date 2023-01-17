@@ -117,13 +117,6 @@ class Resource{
             .wait(500);   
     }
 
-    static checkMessage() {
-        cy.get(acceptMessage)
-            .should('be.visible')
-            .and('have.text', 'Thank you!');
-    }
-
-
     static clickCheckDeveloperDocs() {
         cy.contains('Developer Docs')
             .invoke('show')
