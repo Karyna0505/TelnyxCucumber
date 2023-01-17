@@ -23,7 +23,7 @@ class SwithSave{
     }
 
     static switchSlider() {
-        cy.get('div:nth-child(4) > div> div > div.ant-slider-handle')
+        cy.get('div:nth-child(4) > div.telnyx-slider > div > div.ant-slider-handle')
             .type(arrows);
         cy.get('div:nth-child(5) > div.telnyx-slider > div > div.ant-slider-handle')
             .type(arrows);       

@@ -7,9 +7,14 @@ module.exports = defineConfig({
   pageLoadTimeout: 100000,
   viewportHeight: 720,
   viewportWidth: 1280,
-  
+  reporter: 'mochawesome',
+  reporterOptions: {
+    html: false,
+    json: true,
+    reportDir: 'report',
+    overwrite: false
+  },
   chromeWebSecurity: false,
-  
   e2e: {
    
     specPattern: "**/*.feature",

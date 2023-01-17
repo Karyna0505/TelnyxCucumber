@@ -4,22 +4,23 @@
   "description": "Cypress-Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open ",
+    "test": "cypress open",
     "cy.tests": "cypress run",
-    "config1": "cypress run --config-file cypress.config.js --browser electron",
-    "config2": "cypress run --config-file different.config.js --browser chrome"
-
+    "config1": "cypress run --config-file cypress.config.js --browser electron --reporter mochawesome",
+    "config2": "cypress run --config-file different.config.js --browser chrome",
+    "clear": "node delete-reports.js",
+    "html-report": "mochawesome-merge report/mochawesome*.json > report/output.json && marge report/output.json --reportDir ./ --inline"
   },
   "author": "Karyna",
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.3.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "./cypress/e2e"
   }
-
-    
 }
