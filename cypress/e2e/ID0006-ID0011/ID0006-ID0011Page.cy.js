@@ -115,7 +115,7 @@ class Resource{
         cy.get(buttonSend)
             .click({force: true})
             .wait(500);
-        cy.get(acceptMessage).should('have.text', 'Thank you!');
+        cy.get(acceptMessage).should('be.visible').and('have.text', 'Thank you!');
     }
 
 
