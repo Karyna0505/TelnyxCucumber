@@ -9,8 +9,9 @@ module.exports = defineConfig({
   viewportWidth: 1280,
   
   chromeWebSecurity: false,
-  testIsolation: false,
+  
   e2e: {
+    testIsolation: false,
     specPattern: "**/*.feature",
     setupNodeEvents(on, config) {
       on("file:preprocessor", cucumber())
