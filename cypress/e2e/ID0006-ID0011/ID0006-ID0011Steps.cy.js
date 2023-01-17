@@ -37,11 +37,11 @@ Then('Scroll down to the "Stay Connected" block. Subscribe to the newsletter wit
     Resource.checkIncorrectSubscribe();
 })
 
-// When('Click the "Blog" link. Scroll down to the "Get the eBook" banner.', () => {
-//     Resource.clickAndCheckBlog();
+When('Click the "Blog" link. Scroll down to the "Get the eBook" banner.', () => {
+    Resource.clickAndCheckBlog();
 
-//     Resource.clickGetButton();
-// })
+    Resource.clickGetButton();
+})
 
 // Then('Filling the form and get the e-book.', () => {
 //     Resource.fillForm('User','User','UserCompany', email);
