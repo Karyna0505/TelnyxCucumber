@@ -9,7 +9,7 @@ on:
 jobs:
   install:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome89-ff86
+    container: cypress/browsers:node18.12.0-chrome107
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -18,9 +18,8 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           project: ./
-          browser: chrome
           build: npm install
-          start: npm run test
+          start: npm run config1
           wait-on: "https://telnyx.com/"
         env:
             GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
