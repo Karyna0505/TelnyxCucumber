@@ -4,8 +4,8 @@
   "description": "Cypress-Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open",
-    "cy.tests": "cypress run",
+    "test": "cypress open ",
+    "cy.tests": "cypress run --browser electron",
     "config1": "cypress run --config-file cypress.config.js --browser electron",
     "config2": "cypress run --config-file different.config.js --browser chrome"
 
