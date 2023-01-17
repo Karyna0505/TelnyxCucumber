@@ -18,7 +18,8 @@ class SwithSave{
     static scrollDown() {
         cy.contains('Switch + Save with Telnyx.')
             .scrollIntoView()
-            .should('be.visible');
+            .should('be.visible')
+            .wait(1000);
     }
 
     static switchSlider() {

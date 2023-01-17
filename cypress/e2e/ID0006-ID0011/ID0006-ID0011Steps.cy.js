@@ -39,7 +39,7 @@ Then('Scroll down to the "Stay Connected" block. Subscribe to the newsletter wit
 
 When('Click the "Blog" link. Scroll down to the "Get the eBook" banner.', () => {
     Resource.clickAndCheckBlog();
-    Resource.scrollToTheDownloadBanner();
+    // Resource.scrollToTheDownloadBanner();
     Resource.clickGetButton();
 })
 

@@ -6,7 +6,7 @@ const searchResult = '#articles > div.ijJVSH';
 const searchNoResult = '#__next #articles div';
 const emailField = '#Email';
 const messageError = '#Email_error';
-const title = 'main div > h1';
+const title = 'main div > div > h1';
 const firstName = '#FirstName';
 const lastName = '#LastName';
 const companyName = '#Company';
@@ -92,7 +92,8 @@ class Resource{
         cy.contains('Get the eBook')
             .click();
         cy.get(title)
-            .should('be.visible');
+            .should('be.visible')
+            .wait(1000);
     }
 
     static fillForm(data, emails) {
