@@ -9,7 +9,7 @@ const firstName = 'input[name="FirstName"]';
 const lastName = 'input[name="LastName"]';
 const email = 'input[name="Email"]';
 const message = '.sc-74873084-7.iEYkvv';
-const downloadForm = '#pricing_download_form > div > div > div > div';
+const downloadForm = '#pricing_download_form > div > div > div > div.Text-sc-5o8owa-0.sc-74873084-4.gkWopw.dtWqFL';
 
 class Pricing{
 
