@@ -114,8 +114,13 @@ class Resource{
     static clickSendButton() {
         cy.get(buttonSend)
             .click({force: true})
-            .wait(500);
-        cy.get(acceptMessage).should('be.visible').and('have.text', 'Thank you!');
+            .wait(500);   
+    }
+
+    static checkMessage() {
+        cy.get(acceptMessage)
+            .should('be.visible')
+            .and('have.text', 'Thank you!');
     }
 
 
