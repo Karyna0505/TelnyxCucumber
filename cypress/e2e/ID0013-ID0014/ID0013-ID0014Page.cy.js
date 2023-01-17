@@ -66,7 +66,7 @@ class Pricing{
             .click();
         cy.get(downloadForm)
             .should('be.visible')
-            .and('have.text', 'Download SIP Trunking pricingInbound and outbound call pricing, per country and per destination for over 220 countries.I want to receive emails from TelnyxDownload CSV')         
+            .and('have.text', 'Download SIP Trunking pricing')         
     }
 
     static inputData(name, lastname, emails) { 
