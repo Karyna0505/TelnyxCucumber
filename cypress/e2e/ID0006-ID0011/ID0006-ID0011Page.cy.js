@@ -14,7 +14,7 @@ const email = '#Email';
 const acceptMessage = '#lpeCDiv_109732 > span > div:nth-child(1)';
 const docsTitle = 'main > h1';
 const liveChatLink = 'footer #intercom_launcher';
-
+const buttonSend = 'span button';
 
 class Resource{
 
@@ -112,8 +112,8 @@ class Resource{
     }
 
     static clickSendButton() {
-        cy.contains('Send my Content')
-            .click({force: true});
+        cy.get(buttonSend)
+            .click();
     }
 
     static checkGettingBook() {

@@ -45,7 +45,7 @@ When('Click the "Blog" link. Scroll down to the "Get the eBook" banner.', () => 
 
 Then('Filling the form and get the e-book.', () => {
     Resource.fillForm('User','User','UserCompany', email);
-//     Resource.clickSendButton();
+    Resource.clickSendButton();
 //     Resource.checkGettingBook();
 })
 
