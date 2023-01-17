@@ -43,11 +43,11 @@ When('Click the "Blog" link. Scroll down to the "Get the eBook" banner.', () => 
     Resource.clickGetButton();
 })
 
-// Then('Filling the form and get the e-book.', () => {
-//     Resource.fillForm('User','User','UserCompany', email);
+Then('Filling the form and get the e-book.', () => {
+    Resource.fillForm('User','User','UserCompany', email);
 //     Resource.clickSendButton();
 //     Resource.checkGettingBook();
-// })
+})
 
 When('Click the "Developer Docs" link', () => {
     Resource.clickCheckDeveloperDocs();
