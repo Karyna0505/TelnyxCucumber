@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-18T10:16:56.981Z",
-    "end": "2023-01-18T10:17:04.470Z",
-    "duration": 7489,
+    "start": "2023-01-18T10:18:16.971Z",
+    "end": "2023-01-18T10:18:25.378Z",
+    "duration": 8407,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1a25f9d6-1d8f-4b58-a05e-80fbc8777885",
+      "uuid": "76195469-b2ba-4eff-a392-d05968190cd0",
       "title": "",
       "fullFile": "cypress/e2e/ID0015.feature",
       "file": "cypress/e2e/ID0015.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "151cae64-cd4e-4809-a8c2-decf737f1a91",
+          "uuid": "84add403-aceb-4618-9a67-188dd945c235",
           "title": "Verify message popup.",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "ID_0015 Verify message popup on the \"Managed Service Providers\" page.",
               "fullTitle": "Verify message popup. ID_0015 Verify message popup on the \"Managed Service Providers\" page.",
               "timedOut": null,
-              "duration": 4810,
+              "duration": 5320,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "6c47c485-bc5f-4259-bccc-7ca23dd42c5a",
-              "parentUUID": "151cae64-cd4e-4809-a8c2-decf737f1a91",
+              "uuid": "618104b8-f451-4982-9c4e-92170a4c0319",
+              "parentUUID": "84add403-aceb-4618-9a67-188dd945c235",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6c47c485-bc5f-4259-bccc-7ca23dd42c5a"
+            "618104b8-f451-4982-9c4e-92170a4c0319"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4810,
+          "duration": 5320,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
