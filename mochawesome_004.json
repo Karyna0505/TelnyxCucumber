@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2023-01-18T10:04:13.119Z",
-    "end": "2023-01-18T10:06:07.366Z",
-    "duration": 114247,
+    "start": "2023-01-18T10:15:01.152Z",
+    "end": "2023-01-18T10:16:53.199Z",
+    "duration": 112047,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ee349eae-e6ae-4b6d-8811-4a6f6e8c8d34",
+      "uuid": "547bb5f6-f811-478e-8d0d-9323cf952bc6",
       "title": "",
       "fullFile": "cypress/e2e/ID0013-ID0014.feature",
       "file": "cypress/e2e/ID0013-ID0014.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fd70c417-d40c-48bc-971c-6d03dad4ac30",
+          "uuid": "e57d2f2e-fa61-4b7d-8a27-907c768c79e9",
           "title": "Checking \"Pricing\" menu",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "ID_0013 Checking Voice API Pricing after choosing country.",
               "fullTitle": "Checking \"Pricing\" menu ID_0013 Checking Voice API Pricing after choosing country.",
               "timedOut": null,
-              "duration": 5188,
+              "duration": 4492,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "00130bbb-dcc9-462a-9f87-97da56428b94",
-              "parentUUID": "fd70c417-d40c-48bc-971c-6d03dad4ac30",
+              "uuid": "77f7134f-3925-4408-9951-c49c82588ce3",
+              "parentUUID": "e57d2f2e-fa61-4b7d-8a27-907c768c79e9",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "ID_0014 Checking \"Download SIP Trunking pricing\" form.",
               "fullTitle": "Checking \"Pricing\" menu ID_0014 Checking \"Download SIP Trunking pricing\" form.",
               "timedOut": null,
-              "duration": 105569,
+              "duration": 104336,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,22 +69,22 @@
                 "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `#pricing_download_form > div > div > div > div.Text-sc-5o8owa-0.sc-74873084-4.gkWopw.dtWqFL`, but never found it.\n    at Function.scrollToTheDownloadBanner (cypress/e2e/ID0013-ID0014/ID0013-ID0014Page.cy.js:68:13)\n    at Context.eval (cypress/e2e/ID0013-ID0014/ID0013-ID0014Steps.cy.js:27:12)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "9c8b2fa0-6e12-4732-a22a-300979790177",
-              "parentUUID": "fd70c417-d40c-48bc-971c-6d03dad4ac30",
+              "uuid": "12cecf76-1418-4726-9880-691797262007",
+              "parentUUID": "e57d2f2e-fa61-4b7d-8a27-907c768c79e9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "00130bbb-dcc9-462a-9f87-97da56428b94"
+            "77f7134f-3925-4408-9951-c49c82588ce3"
           ],
           "failures": [
-            "9c8b2fa0-6e12-4732-a22a-300979790177"
+            "12cecf76-1418-4726-9880-691797262007"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 110757,
+          "duration": 108828,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

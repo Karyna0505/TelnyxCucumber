@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-01-18T10:02:22.022Z",
-    "end": "2023-01-18T10:04:08.378Z",
-    "duration": 106356,
+    "start": "2023-01-18T10:13:11.747Z",
+    "end": "2023-01-18T10:14:57.117Z",
+    "duration": 105370,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "dc2f0cfc-bcbe-4810-a6f4-f763330c3962",
+      "uuid": "1c7210d6-3374-4f96-8d81-8d22e3a0cb55",
       "title": "",
       "fullFile": "cypress/e2e/ID0012.feature",
       "file": "cypress/e2e/ID0012.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "92b6374f-2007-4059-aa56-d8dc88a30046",
+          "uuid": "23225336-0ca8-400b-b877-9e130fa3f564",
           "title": "Сhecking banner calculator.",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "ID_0012 Checking correct work calculator banner after changing slider-handle.",
               "fullTitle": "Сhecking banner calculator. ID_0012 Checking correct work calculator banner after changing slider-handle.",
               "timedOut": null,
-              "duration": 103271,
+              "duration": 102769,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `div:nth-child(4) > div.telnyx-slider > div > div.ant-slider-handle`, but never found it.\n    at Function.switchSlider (cypress/e2e/ID0012/ID0012Page.cy.js:26:11)\n    at Context.eval (cypress/e2e/ID0012/ID0012Steps.cy.js:13:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "91ef52d5-ad03-407e-8db1-61898cd39741",
-              "parentUUID": "92b6374f-2007-4059-aa56-d8dc88a30046",
+              "uuid": "775ab76a-9490-4e52-be9d-7a0c8b6318bb",
+              "parentUUID": "23225336-0ca8-400b-b877-9e130fa3f564",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "91ef52d5-ad03-407e-8db1-61898cd39741"
+            "775ab76a-9490-4e52-be9d-7a0c8b6318bb"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 103271,
+          "duration": 102769,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
