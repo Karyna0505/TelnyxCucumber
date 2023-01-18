@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-01-18T09:13:28.392Z",
+    "end": "2023-01-18T09:15:21.248Z",
+    "duration": 112856,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "195dc60d-0fe3-4b30-b364-25cabef9fc6a",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0013-ID0014.feature",
+      "file": "cypress/e2e/ID0013-ID0014.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ce31f61-dcb9-42a6-aa28-970cc1d40b1a",
+          "title": "Checking \"Pricing\" menu",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_0013 Checking Voice API Pricing after choosing country.",
+              "fullTitle": "Checking \"Pricing\" menu ID_0013 Checking Voice API Pricing after choosing country.",
+              "timedOut": null,
+              "duration": 4635,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "afa446f6-77c6-42e2-acd0-ad25fff49ced",
+              "parentUUID": "6ce31f61-dcb9-42a6-aa28-970cc1d40b1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_0014 Checking \"Download SIP Trunking pricing\" form.",
+              "fullTitle": "Checking \"Pricing\" menu ID_0014 Checking \"Download SIP Trunking pricing\" form.",
+              "timedOut": null,
+              "duration": 104920,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `#pricing_download_form > div > div > div > div.Text-sc-5o8owa-0.sc-74873084-4.gkWopw.dtWqFL`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `#pricing_download_form > div > div > div > div.Text-sc-5o8owa-0.sc-74873084-4.gkWopw.dtWqFL`, but never found it.\n    at Function.scrollToTheDownloadBanner (cypress/e2e/ID0013-ID0014/ID0013-ID0014Page.cy.js:68:13)\n    at Context.eval (cypress/e2e/ID0013-ID0014/ID0013-ID0014Steps.cy.js:27:12)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "5c945641-b6ff-4e60-8c5c-6abb1d4ce952",
+              "parentUUID": "6ce31f61-dcb9-42a6-aa28-970cc1d40b1a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "afa446f6-77c6-42e2-acd0-ad25fff49ced"
+          ],
+          "failures": [
+            "5c945641-b6ff-4e60-8c5c-6abb1d4ce952"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 109555,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "html": false,
+        "json": true,
+        "reportDir": "report",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-18T09:10:59.525Z",
+    "end": "2023-01-18T09:11:34.371Z",
+    "duration": 34846,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d08ab7c2-e35e-4fee-9045-0db2d61289de",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0006-ID0011.feature",
+      "file": "cypress/e2e/ID0006-ID0011.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+          "title": "Checking \"Resources\" menu",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_0006 Verify the search option on the \"Blog\" page with valid data.",
+              "fullTitle": "Checking \"Resources\" menu ID_0006 Verify the search option on the \"Blog\" page with valid data.",
+              "timedOut": null,
+              "duration": 5618,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9f7809ad-c38c-44fe-8182-e457fc323a33",
+              "parentUUID": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_0007 Verify the search option on the \"Blog\" page with invalid data.",
+              "fullTitle": "Checking \"Resources\" menu ID_0007 Verify the search option on the \"Blog\" page with invalid data.",
+              "timedOut": null,
+              "duration": 5039,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "49c6a2c6-1152-4071-a8e2-bce91f24929c",
+              "parentUUID": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_0008 Checking subscription option on the \"Blog\" page with valid email.",
+              "fullTitle": "Checking \"Resources\" menu ID_0008 Checking subscription option on the \"Blog\" page with valid email.",
+              "timedOut": null,
+              "duration": 4993,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "80b83d0d-fe91-463b-980c-1e5383e35b28",
+              "parentUUID": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_0009 Checking subscription option on the \"Blog\" page with invalid email.",
+              "fullTitle": "Checking \"Resources\" menu ID_0009 Checking subscription option on the \"Blog\" page with invalid email.",
+              "timedOut": null,
+              "duration": 3615,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f6763352-7c10-44ea-8f9c-2684d07dba5e",
+              "parentUUID": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_00010 Checking getting eBook on the \"Blog\" page.",
+              "fullTitle": "Checking \"Resources\" menu ID_00010 Checking getting eBook on the \"Blog\" page.",
+              "timedOut": null,
+              "duration": 8737,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "ff551563-2023-403e-9f4f-f905954a9031",
+              "parentUUID": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_00011 Checking \"Live chat\" form on the Telnyx Developers page.",
+              "fullTitle": "Checking \"Resources\" menu ID_00011 Checking \"Live chat\" form on the Telnyx Developers page.",
+              "timedOut": null,
+              "duration": 3557,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "363fd4e4-0125-49f8-9bd8-78259dbab76a",
+              "parentUUID": "cdad75e5-19cf-4d5a-bb4c-3fe4717839b1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f7809ad-c38c-44fe-8182-e457fc323a33",
+            "49c6a2c6-1152-4071-a8e2-bce91f24929c",
+            "80b83d0d-fe91-463b-980c-1e5383e35b28",
+            "f6763352-7c10-44ea-8f9c-2684d07dba5e",
+            "ff551563-2023-403e-9f4f-f905954a9031",
+            "363fd4e4-0125-49f8-9bd8-78259dbab76a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 31559,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "html": false,
+        "json": true,
+        "reportDir": "report",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
