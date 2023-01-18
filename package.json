@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress open",
     "cy.tests": "cypress run",
-    "config1": "cypress run --config-file cypress.config.js --browser electron --reporter mochawesome",
+    "config1": "cypress run --config-file cypress.config.js --browser chrome --reporter mochawesome",
     "config2": "cypress run --config-file different.config.js --browser chrome",
     "clear": "node delete-reports.js",
     "html-report": "mochawesome-merge report/mochawesome*.json > report/index.json && marge report/index.json --reportDir ./report/ --inline"
