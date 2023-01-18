@@ -24,7 +24,7 @@ module.exports = defineConfig({
       
       return {
         browsers: config.browsers.filter(
-          (b) => b.name === 'electron'
+          (b) => b.name === 'chrome'
         ),
       }
     },
