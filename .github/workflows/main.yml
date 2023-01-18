@@ -26,12 +26,12 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
       - name: Generate reports
         run: npm run html-report
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Deploy report page
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: './report/output.html'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./report
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
       
 
