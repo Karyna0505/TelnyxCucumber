@@ -25,7 +25,7 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.TELNYXCUCUMBERTESTING }}
       - name: Generate reports
-        run: npm run clear && npm run html-report
+        run: npm run html-report
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
