@@ -1,2 +1,2 @@
 const fs = require("fs");
-fs.rm("./report", {recursive: true});
+fs.rmSync("./report", {recursive: true, force: true});
