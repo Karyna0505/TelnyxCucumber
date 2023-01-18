@@ -19,7 +19,7 @@ jobs:
         with:
           project: ./
           build: npm install
-          browser: electron
+          browser: chrome
           wait-on: "https://telnyx.com/"
         continue-on-error: true
         env:
