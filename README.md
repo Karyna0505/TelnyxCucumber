@@ -19,15 +19,29 @@ Cypress-Cucumber Test runner "TELNYX" project
 I defined a default configuration (cypress.config.js) which will be executed when you run. To run cypress from the command line, type in the terminal
     
     npm run test
-or
 
-    npx cypress run
-or
+or 
+
+    npm run cy.tests
+
+To run cypress headless mode
+
+More details how to run on the link https://docs.cypress.io/guides/references/configuration#Specifying-an-Alternative-Config-File
+
+
+### Mochawesome Report
+
+To generate a report for all specs in the integration folder of the Cypress project, run the command given below −
 
     npm run config1
 
-If you wnat to use other configuration file (different.config.js) which will be executed when you run. To run cypress from the command line, type in the terminal
+### Html-report:
 
-    npm run config2
+    npm run html-report
 
-More details how to run on the link https://docs.cypress.io/guides/references/configuration#Specifying-an-Alternative-Config-File
+More information about how to use the report , please, follow to link https://docs.cypress.io/guides/tooling/reporters
+
+### GitHub Actions and Pages 
+When a push is made to the master/main repository, the workflow is triggered. The output of each build is available on the Actions pane of the repository and we can drill down into each flow to see why it failed.
+
+    https://karyna0505.github.io/TelnyxCucumber/

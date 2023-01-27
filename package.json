@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "cy.tests": "cypress run",
+    "cy.tests": "cypress run --browser chrome",
     "config1": "cypress run --config-file cypress.config.js --browser chrome --reporter mochawesome",
-    "config2": "cypress run --config-file different.config.js --browser chrome",
     "clear": "node delete-reports.js",
     "html-report": "mochawesome-merge report/mochawesome*.json > report/index.json && marge report/index.json --reportDir ./report/ --inline"
   },
@@ -22,5 +21,8 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "./cypress/e2e"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3"
   }
 }

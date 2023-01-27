@@ -1,4 +1,4 @@
-const URL = 'https://telnyx.com/';
+const banner = 'main a[href*="telnyx"]>span';
 const currentValue  = 240000;
 const targetValue = 480000;
 const increment = 2000;
@@ -9,17 +9,10 @@ const costTwilio = 'div.sc-1a5981e5-7.fgvOeg > div:nth-child(2) > span';
 
 class SwithSave{
 
-    static visitSite() {
-        cy.visit(URL);
-        cy.contains('Accept and close')
-            .click();
-    }
-
-    static scrollDown() {
-        cy.contains('Switch + Save with Telnyx.')
+    static checkBanner() {
+        cy.get(banner)
             .scrollIntoView()
-            .should('be.visible')
-            .wait(1000);
+            .should('be.visible').and('have.text','Switch + Save with Telnyx.')
     }
 
     static switchSlider() {
