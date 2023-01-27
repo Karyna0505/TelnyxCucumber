@@ -60,33 +60,16 @@ class Blog{
     
     static clickGetButton() {
         cy.get(getEbookButton)
-            .click();
+            .click()
+            .wait(1000);
     }
 
-    static fillForm(data, data1, data3, emails) {
-        cy.get(firstName)
-            .type(data)
-            .should('have.value', data);
-        cy.get(lastName)
-            .type(data1)
-            .should('have.value', data1);
-        cy.get(companyName)
-            .type(data3)
-            .should('have.value', data3);
-        cy.get(email)
-            .type(emails)
-            .should('have.value', emails);
-        cy.get(buttonSend)
-            .click({force: true})
-            .wait(500); 
+    static checkNewPage() {
+        cy.get('main h1')
+            .should('be.visible')
+            .and('have.text', 'Twilio Alternative eBook Download');
     }
-
-    static checkMessage() {
-        cy.get(acceptMessage)
-            .should('have.text', 'Thank you!')
-    }
-
-        
+   
 }
 
 

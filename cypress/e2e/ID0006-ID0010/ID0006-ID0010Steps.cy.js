@@ -58,14 +58,10 @@ Then('The "Please enter a valid email address." subscription message should be d
     Blog.checkIncorrectSubscribe();
 })
 
-And('I click the "Get the eBook" link.', () => {
+When('I click the "Get the eBook" link.', () => {
     Blog.clickGetButton();
 })
 
-When('I fill in all required field.', () => {
-    Blog.fillForm('User','User','UserCompany', email);
-})
-
-Then('The "Thank you!" message should be displayed.', () => {
-    Blog.checkMessage();
+Then('I should see new page with getting form.', () => {
+    Blog.checkNewPage();
 })

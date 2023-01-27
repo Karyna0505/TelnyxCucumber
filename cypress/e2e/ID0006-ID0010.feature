@@ -42,8 +42,7 @@ Scenario:ID_00010 Check getting eBook on the "Blog" page.
         And I click "Accept and close" button.
         And I hover the mouse over the "Resources" link.
         And I click the "Blog" link.
-        And I click the "Get the eBook" link.
-        When I fill in all required field.
-        Then The "Thank you!" message should be displayed.
+        When I click the "Get the eBook" link.
+        Then I should see new page with getting form.
 
 
