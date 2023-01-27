@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T12:35:11.170Z",
-    "end": "2023-01-27T12:35:17.896Z",
-    "duration": 6726,
+    "start": "2023-01-27T12:55:18.293Z",
+    "end": "2023-01-27T12:55:24.310Z",
+    "duration": 6017,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ecc7ad05-0585-46b1-b8ac-b42e8fc3ff28",
+      "uuid": "6a63e1f0-ec20-437e-9f4b-db3164afea87",
       "title": "",
       "fullFile": "cypress/e2e/ID0011.feature",
       "file": "cypress/e2e/ID0011.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5c40d02b-cfcc-4065-b182-87316e6d763b",
+          "uuid": "70aa43bd-09b4-45f6-b4ba-a10b1a7f98c9",
           "title": "Check \"Live chat\" form",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "ID_00011 Check \"Live chat\" form on the Telnyx Developers page.",
               "fullTitle": "Check \"Live chat\" form ID_00011 Check \"Live chat\" form on the Telnyx Developers page.",
               "timedOut": null,
-              "duration": 3771,
+              "duration": 3724,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "6207a96c-8a09-4548-9875-25caa3d8eb47",
-              "parentUUID": "5c40d02b-cfcc-4065-b182-87316e6d763b",
+              "uuid": "81054b00-2e57-4802-a2d5-f4e98094f39e",
+              "parentUUID": "70aa43bd-09b4-45f6-b4ba-a10b1a7f98c9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6207a96c-8a09-4548-9875-25caa3d8eb47"
+            "81054b00-2e57-4802-a2d5-f4e98094f39e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3771,
+          "duration": 3724,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

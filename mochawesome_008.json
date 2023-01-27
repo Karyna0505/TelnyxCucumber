@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T12:37:10.345Z",
-    "end": "2023-01-27T12:37:28.052Z",
-    "duration": 17707,
+    "start": "2023-01-27T12:55:43.152Z",
+    "end": "2023-01-27T12:55:57.676Z",
+    "duration": 14524,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "94a0fda7-b964-4872-8035-a2a9ccb1ebe5",
+      "uuid": "8aa20cb1-a94d-4e72-85a7-3b1d1558d8ad",
       "title": "",
       "fullFile": "cypress/e2e/ID0013-ID0014.feature",
       "file": "cypress/e2e/ID0013-ID0014.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6b020a4f-d207-4124-a29f-f1c45b1baca7",
+          "uuid": "a77d0c43-555e-4c75-b3fc-23743b56d900",
           "title": "Check \"Pricing\" menu",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "ID_0013 Check Voice API Pricing after choosing country.",
               "fullTitle": "Check \"Pricing\" menu ID_0013 Check Voice API Pricing after choosing country.",
               "timedOut": null,
-              "duration": 5930,
+              "duration": 4598,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "2e6c465b-f482-4088-a91b-13bfbf75796c",
-              "parentUUID": "6b020a4f-d207-4124-a29f-f1c45b1baca7",
+              "uuid": "418e4a1c-ad7a-4d89-bc37-e16fa1c1e1bf",
+              "parentUUID": "a77d0c43-555e-4c75-b3fc-23743b56d900",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "ID_0014 Check \"Download SIP Trunking pricing\" form.",
               "fullTitle": "Check \"Pricing\" menu ID_0014 Check \"Download SIP Trunking pricing\" form.",
               "timedOut": null,
-              "duration": 8907,
+              "duration": 7025,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "c68c3d60-3659-40fe-9d65-b8502012018d",
-              "parentUUID": "6b020a4f-d207-4124-a29f-f1c45b1baca7",
+              "uuid": "9c59a6d6-0485-4324-b309-0cb0223ca1d7",
+              "parentUUID": "a77d0c43-555e-4c75-b3fc-23743b56d900",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2e6c465b-f482-4088-a91b-13bfbf75796c",
-            "c68c3d60-3659-40fe-9d65-b8502012018d"
+            "418e4a1c-ad7a-4d89-bc37-e16fa1c1e1bf",
+            "9c59a6d6-0485-4324-b309-0cb0223ca1d7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14837,
+          "duration": 11623,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
