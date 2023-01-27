@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T12:55:27.922Z",
-    "end": "2023-01-27T12:55:39.503Z",
-    "duration": 11581,
+    "start": "2023-01-27T13:09:03.866Z",
+    "end": "2023-01-27T13:09:17.929Z",
+    "duration": 14063,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "282e0967-31fe-480e-bd66-75f5b23b2986",
+      "uuid": "58b4cc71-dc28-4a7b-ba36-9907de81ee3d",
       "title": "",
       "fullFile": "cypress/e2e/ID0012.feature",
       "file": "cypress/e2e/ID0012.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cf4aa125-d613-4eac-814c-8d7cb201d09d",
+          "uuid": "526a2ca4-aed6-4c0d-89b5-3ffc14f3567f",
           "title": "Сheck banner calculator.",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "ID_0012 Check correct work calculator banner after changing slider-handle.",
               "fullTitle": "Сheck banner calculator. ID_0012 Check correct work calculator banner after changing slider-handle.",
               "timedOut": null,
-              "duration": 9240,
+              "duration": 11369,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "a39fc662-5bb8-4788-802c-70d9d1040d7a",
-              "parentUUID": "cf4aa125-d613-4eac-814c-8d7cb201d09d",
+              "uuid": "1d1c98f8-a610-485f-8e59-ec962237931d",
+              "parentUUID": "526a2ca4-aed6-4c0d-89b5-3ffc14f3567f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a39fc662-5bb8-4788-802c-70d9d1040d7a"
+            "1d1c98f8-a610-485f-8e59-ec962237931d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9240,
+          "duration": 11369,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

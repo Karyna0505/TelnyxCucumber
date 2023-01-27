@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T12:55:18.293Z",
-    "end": "2023-01-27T12:55:24.310Z",
-    "duration": 6017,
+    "start": "2023-01-27T13:08:50.956Z",
+    "end": "2023-01-27T13:08:59.404Z",
+    "duration": 8448,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6a63e1f0-ec20-437e-9f4b-db3164afea87",
+      "uuid": "94d69002-aa6c-418f-a60a-bdd9371c1454",
       "title": "",
       "fullFile": "cypress/e2e/ID0011.feature",
       "file": "cypress/e2e/ID0011.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "70aa43bd-09b4-45f6-b4ba-a10b1a7f98c9",
+          "uuid": "07b5f077-ca34-4bde-be7f-b2f9c7dc2bae",
           "title": "Check \"Live chat\" form",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "ID_00011 Check \"Live chat\" form on the Telnyx Developers page.",
               "fullTitle": "Check \"Live chat\" form ID_00011 Check \"Live chat\" form on the Telnyx Developers page.",
               "timedOut": null,
-              "duration": 3724,
+              "duration": 5631,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "81054b00-2e57-4802-a2d5-f4e98094f39e",
-              "parentUUID": "70aa43bd-09b4-45f6-b4ba-a10b1a7f98c9",
+              "uuid": "9c0622db-79a0-40db-b2df-cb0a6670c161",
+              "parentUUID": "07b5f077-ca34-4bde-be7f-b2f9c7dc2bae",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "81054b00-2e57-4802-a2d5-f4e98094f39e"
+            "9c0622db-79a0-40db-b2df-cb0a6670c161"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3724,
+          "duration": 5631,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T12:53:01.172Z",
-    "end": "2023-01-27T12:53:11.627Z",
-    "duration": 10455,
+    "start": "2023-01-27T13:05:44.364Z",
+    "end": "2023-01-27T13:05:57.824Z",
+    "duration": 13460,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "838d6e86-c284-4bbb-97ed-ac90a81dc15d",
+      "uuid": "cf4b8922-2d91-44a2-b6f6-08e7aa21032f",
       "title": "",
       "fullFile": "cypress/e2e/ID0004.feature",
       "file": "cypress/e2e/ID0004.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "adeb1d42-8f5e-43ba-ac02-8522986da665",
+          "uuid": "8f7fffb4-9af2-4714-80f4-c49ea723ff8d",
           "title": "Check navigation menu.",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "ID_0004 Check \"Solutions\" menu items on the navmenu.",
               "fullTitle": "Check navigation menu. ID_0004 Check \"Solutions\" menu items on the navmenu.",
               "timedOut": null,
-              "duration": 7752,
+              "duration": 10411,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "bcee56f5-5e36-404e-a7c2-b9242bfdfdc6",
-              "parentUUID": "adeb1d42-8f5e-43ba-ac02-8522986da665",
+              "uuid": "dc23dbc8-ac41-4674-8eba-c7d948e51fbe",
+              "parentUUID": "8f7fffb4-9af2-4714-80f4-c49ea723ff8d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bcee56f5-5e36-404e-a7c2-b9242bfdfdc6"
+            "dc23dbc8-ac41-4674-8eba-c7d948e51fbe"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7752,
+          "duration": 10411,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

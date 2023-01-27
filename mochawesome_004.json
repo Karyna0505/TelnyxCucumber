@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T12:53:15.194Z",
-    "end": "2023-01-27T12:54:48.077Z",
-    "duration": 92883,
+    "start": "2023-01-27T13:06:01.980Z",
+    "end": "2023-01-27T13:08:07.297Z",
+    "duration": 125317,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a7fc1014-2a84-4905-b827-4e463db306e1",
+      "uuid": "d53e04e9-34bd-4fa6-a47a-082f84b4df63",
       "title": "",
       "fullFile": "cypress/e2e/ID0005.feature",
       "file": "cypress/e2e/ID0005.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "51c84520-e6d1-40af-a76f-8c9c472d9c07",
+          "uuid": "61d3b707-2821-40f2-9147-7cd86df41120",
           "title": "Check links on the footer.",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "ID_0005 All links on the footer should be clickable.",
               "fullTitle": "Check links on the footer. ID_0005 All links on the footer should be clickable.",
               "timedOut": null,
-              "duration": 90128,
+              "duration": 121760,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "3073c9be-0875-4acd-8f57-7588b049986c",
-              "parentUUID": "51c84520-e6d1-40af-a76f-8c9c472d9c07",
+              "uuid": "0829a546-c12b-451e-af03-c215a6541fa1",
+              "parentUUID": "61d3b707-2821-40f2-9147-7cd86df41120",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3073c9be-0875-4acd-8f57-7588b049986c"
+            "0829a546-c12b-451e-af03-c215a6541fa1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 90128,
+          "duration": 121760,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
