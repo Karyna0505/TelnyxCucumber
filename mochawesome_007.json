@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-01-27T12:32:05.094Z",
-    "end": "2023-01-27T12:32:15.438Z",
-    "duration": 10344,
+    "failures": 1,
+    "start": "2023-01-27T12:35:21.854Z",
+    "end": "2023-01-27T12:37:06.338Z",
+    "duration": 104484,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,49 +18,53 @@
   },
   "results": [
     {
-      "uuid": "484c13a0-003d-447b-a5f8-cf3447c34883",
+      "uuid": "0ae88f9f-4ecc-4be7-aafb-bf2f3d66ae56",
       "title": "",
-      "fullFile": "cypress/e2e/ID0002.feature",
-      "file": "cypress/e2e/ID0002.feature",
+      "fullFile": "cypress/e2e/ID0012.feature",
+      "file": "cypress/e2e/ID0012.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "106d55d5-42c9-4980-93b8-cbefb14fbc03",
-          "title": "Check navigation menu.",
+          "uuid": "aab1a0e9-aa84-4c8f-b109-078e7d067d3d",
+          "title": "Сheck banner calculator.",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "ID_0002 Check \"Company\" menu items on the navmenu.",
-              "fullTitle": "Check navigation menu. ID_0002 Check \"Company\" menu items on the navmenu.",
+              "title": "ID_0012 Check correct work calculator banner after changing slider-handle.",
+              "fullTitle": "Сheck banner calculator. ID_0012 Check correct work calculator banner after changing slider-handle.",
               "timedOut": null,
-              "duration": 7799,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 101983,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "0fc4f9c5-a722-4dcc-80d1-e943062e16e9",
-              "parentUUID": "106d55d5-42c9-4980-93b8-cbefb14fbc03",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `div:nth-child(4) > div.telnyx-slider > div > div.ant-slider-handle`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `div:nth-child(4) > div.telnyx-slider > div > div.ant-slider-handle`, but never found it.\n    at Function.switchSlider (cypress/e2e/PagesObject/CalculatorBannerPage.cy.js:19:11)\n    at Context.eval (cypress/e2e/ID0012/ID0012Steps.cy.js:19:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "4cd75da7-032c-4416-b249-a09d7a2216e6",
+              "parentUUID": "aab1a0e9-aa84-4c8f-b109-078e7d067d3d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "0fc4f9c5-a722-4dcc-80d1-e943062e16e9"
+          "passes": [],
+          "failures": [
+            "4cd75da7-032c-4416-b249-a09d7a2216e6"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7799,
+          "duration": 101983,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

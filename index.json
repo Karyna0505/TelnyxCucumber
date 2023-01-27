@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 6,
+    "suites": 10,
     "tests": 15,
     "passes": 14,
     "pending": 0,
     "failures": 1,
-    "start": "2023-01-18T10:12:42.583Z",
-    "end": "2023-01-18T10:18:25.378Z",
-    "duration": 300094,
+    "start": "2023-01-27T12:31:37.112Z",
+    "end": "2023-01-27T12:37:39.131Z",
+    "duration": 298476,
     "testsRegistered": 15,
     "passPercent": 93.33333333333333,
     "pendingPercent": 0,
@@ -18,27 +18,27 @@
   },
   "results": [
     {
-      "uuid": "7b748420-7d3e-4ee7-bdbf-c3976094aac9",
+      "uuid": "32b93d3c-2438-4dba-bbbe-373003742283",
       "title": "",
-      "fullFile": "cypress/e2e/ID0001-ID0004.feature",
-      "file": "cypress/e2e/ID0001-ID0004.feature",
+      "fullFile": "cypress/e2e/ID0001.feature",
+      "file": "cypress/e2e/ID0001.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "04bea6ca-e8fb-42cb-a849-c182fcf51c60",
-          "title": "Checking navigation menu",
+          "uuid": "dffca4e9-09f9-41e7-b3ee-fcb409fc5953",
+          "title": "Check navigation menu.",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "ID_0001 Checking \"Pricing\" menu items on the navmenu.",
-              "fullTitle": "Checking navigation menu ID_0001 Checking \"Pricing\" menu items on the navmenu.",
+              "title": "ID_0001 Check \"Pricing\" menu items on the navmenu.",
+              "fullTitle": "Check navigation menu. ID_0001 Check \"Pricing\" menu items on the navmenu.",
               "timedOut": null,
-              "duration": 21086,
+              "duration": 19722,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,77 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "d688b981-1d0d-4e3e-8199-9fd37bd6eb8e",
-              "parentUUID": "04bea6ca-e8fb-42cb-a849-c182fcf51c60",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "ID_0002 Checking \"Company\" menu items on the navmenu.",
-              "fullTitle": "Checking navigation menu ID_0002 Checking \"Company\" menu items on the navmenu.",
-              "timedOut": null,
-              "duration": 8591,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "a0c293f8-f7d4-4542-bb4b-d3dc00ac7e17",
-              "parentUUID": "04bea6ca-e8fb-42cb-a849-c182fcf51c60",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "ID_0003 Checking \"Resources\" menu items on the navmenu.",
-              "fullTitle": "Checking navigation menu ID_0003 Checking \"Resources\" menu items on the navmenu.",
-              "timedOut": null,
-              "duration": 12437,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "1582a7e2-676a-4423-bf5c-a722678dd339",
-              "parentUUID": "04bea6ca-e8fb-42cb-a849-c182fcf51c60",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "ID_0004 Checking \"Solutions\" menu items on the navmenu.",
-              "fullTitle": "Checking navigation menu ID_0004 Checking \"Solutions\" menu items on the navmenu.",
-              "timedOut": null,
-              "duration": 5090,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "9ff7617f-70fb-40f2-ade9-f2896c5a5c9c",
-              "parentUUID": "04bea6ca-e8fb-42cb-a849-c182fcf51c60",
+              "uuid": "6a743ab1-4ca1-4ff2-9eda-226bf18a62f3",
+              "parentUUID": "dffca4e9-09f9-41e7-b3ee-fcb409fc5953",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d688b981-1d0d-4e3e-8199-9fd37bd6eb8e",
-            "a0c293f8-f7d4-4542-bb4b-d3dc00ac7e17",
-            "1582a7e2-676a-4423-bf5c-a722678dd339",
-            "9ff7617f-70fb-40f2-ade9-f2896c5a5c9c"
+            "6a743ab1-4ca1-4ff2-9eda-226bf18a62f3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 47204,
+          "duration": 19722,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -133,7 +76,181 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0abd0843-0c72-4503-afc5-f09d0d124a6c",
+      "uuid": "484c13a0-003d-447b-a5f8-cf3447c34883",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0002.feature",
+      "file": "cypress/e2e/ID0002.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "106d55d5-42c9-4980-93b8-cbefb14fbc03",
+          "title": "Check navigation menu.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_0002 Check \"Company\" menu items on the navmenu.",
+              "fullTitle": "Check navigation menu. ID_0002 Check \"Company\" menu items on the navmenu.",
+              "timedOut": null,
+              "duration": 7799,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0fc4f9c5-a722-4dcc-80d1-e943062e16e9",
+              "parentUUID": "106d55d5-42c9-4980-93b8-cbefb14fbc03",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0fc4f9c5-a722-4dcc-80d1-e943062e16e9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7799,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1129813c-37fc-4e76-81a9-29783d4803d8",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0003.feature",
+      "file": "cypress/e2e/ID0003.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ed8cc1d-c65d-4130-9e10-0be183f710df",
+          "title": "Check navigation menu.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_0003 Check \"Resources\" menu items on the navmenu.",
+              "fullTitle": "Check navigation menu. ID_0003 Check \"Resources\" menu items on the navmenu.",
+              "timedOut": null,
+              "duration": 13447,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "20f1f980-2b50-4400-b309-e8a46bdca5b4",
+              "parentUUID": "2ed8cc1d-c65d-4130-9e10-0be183f710df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "20f1f980-2b50-4400-b309-e8a46bdca5b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13447,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8ecb09c6-ebdd-4ce9-b8c4-846b30aa5126",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0004.feature",
+      "file": "cypress/e2e/ID0004.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1c25ff4a-215d-4d72-b458-86549cb019fa",
+          "title": "Check navigation menu.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_0004 Check \"Solutions\" menu items on the navmenu.",
+              "fullTitle": "Check navigation menu. ID_0004 Check \"Solutions\" menu items on the navmenu.",
+              "timedOut": null,
+              "duration": 9027,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "19bde5c7-14db-4b23-9100-d6198065ce60",
+              "parentUUID": "1c25ff4a-215d-4d72-b458-86549cb019fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "19bde5c7-14db-4b23-9100-d6198065ce60"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9027,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "70994e09-b578-429f-b126-47aa8ba8a2d0",
       "title": "",
       "fullFile": "cypress/e2e/ID0005.feature",
       "file": "cypress/e2e/ID0005.feature",
@@ -142,8 +259,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "24802def-ed5f-4fb3-b01b-3b7b77a2be8a",
-          "title": "Checking links on the footer",
+          "uuid": "b5369946-874c-4c9f-839a-9238ebd10509",
+          "title": "Check links on the footer.",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -151,9 +268,9 @@
           "tests": [
             {
               "title": "ID_0005 All links on the footer should be clickable.",
-              "fullTitle": "Checking links on the footer ID_0005 All links on the footer should be clickable.",
+              "fullTitle": "Check links on the footer. ID_0005 All links on the footer should be clickable.",
               "timedOut": null,
-              "duration": 93360,
+              "duration": 99978,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -162,20 +279,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "66d95aab-158c-43f4-9c1b-e11658a92206",
-              "parentUUID": "24802def-ed5f-4fb3-b01b-3b7b77a2be8a",
+              "uuid": "b154b515-2960-4159-ad03-d6c80aacbccf",
+              "parentUUID": "b5369946-874c-4c9f-839a-9238ebd10509",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "66d95aab-158c-43f4-9c1b-e11658a92206"
+            "b154b515-2960-4159-ad03-d6c80aacbccf"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 93360,
+          "duration": 99978,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -191,17 +308,17 @@
       "_timeout": 2000
     },
     {
-      "uuid": "03f527b5-068a-4805-a64a-64b5f6d130af",
+      "uuid": "07463425-f4fb-497a-b0fa-c0bb6c443f13",
       "title": "",
-      "fullFile": "cypress/e2e/ID0006-ID0011.feature",
-      "file": "cypress/e2e/ID0006-ID0011.feature",
+      "fullFile": "cypress/e2e/ID0006-ID0010.feature",
+      "file": "cypress/e2e/ID0006-ID0010.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
-          "title": "Checking \"Resources\" menu",
+          "uuid": "7ec92390-566f-44e1-b4fb-2fb7e5c3636b",
+          "title": "Check \"Blog\" page",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -209,9 +326,9 @@
           "tests": [
             {
               "title": "ID_0006 Verify the search option on the \"Blog\" page with valid data.",
-              "fullTitle": "Checking \"Resources\" menu ID_0006 Verify the search option on the \"Blog\" page with valid data.",
+              "fullTitle": "Check \"Blog\" page ID_0006 Verify the search option on the \"Blog\" page with valid data.",
               "timedOut": null,
-              "duration": 5756,
+              "duration": 5978,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -220,16 +337,16 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "08ca5f8c-531b-496f-b794-586182e02bae",
-              "parentUUID": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
+              "uuid": "69719bc9-e1a6-4f50-ab08-b99cdc98dc7d",
+              "parentUUID": "7ec92390-566f-44e1-b4fb-2fb7e5c3636b",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "ID_0007 Verify the search option on the \"Blog\" page with invalid data.",
-              "fullTitle": "Checking \"Resources\" menu ID_0007 Verify the search option on the \"Blog\" page with invalid data.",
+              "fullTitle": "Check \"Blog\" page ID_0007 Verify the search option on the \"Blog\" page with invalid data.",
               "timedOut": null,
-              "duration": 5923,
+              "duration": 5108,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -238,16 +355,16 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "b7e5a2d9-b254-4fbc-9257-3b4da1b48790",
-              "parentUUID": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
+              "uuid": "df32055c-0da0-4358-9150-7aad271697be",
+              "parentUUID": "7ec92390-566f-44e1-b4fb-2fb7e5c3636b",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "ID_0008 Checking subscription option on the \"Blog\" page with valid email.",
-              "fullTitle": "Checking \"Resources\" menu ID_0008 Checking subscription option on the \"Blog\" page with valid email.",
+              "title": "ID_0008 Check subscription option on the \"Blog\" page with valid email.",
+              "fullTitle": "Check \"Blog\" page ID_0008 Check subscription option on the \"Blog\" page with valid email.",
               "timedOut": null,
-              "duration": 3993,
+              "duration": 3969,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -256,16 +373,16 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "5c88d597-8c9d-494f-b6e1-bac83b4f4cc1",
-              "parentUUID": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
+              "uuid": "e2e7618c-41e6-4ff1-a58e-c5960a118d4b",
+              "parentUUID": "7ec92390-566f-44e1-b4fb-2fb7e5c3636b",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "ID_0009 Checking subscription option on the \"Blog\" page with invalid email.",
-              "fullTitle": "Checking \"Resources\" menu ID_0009 Checking subscription option on the \"Blog\" page with invalid email.",
+              "title": "ID_0009 Check subscription option on the \"Blog\" page with invalid email.",
+              "fullTitle": "Check \"Blog\" page ID_0009 Check subscription option on the \"Blog\" page with invalid email.",
               "timedOut": null,
-              "duration": 3853,
+              "duration": 3300,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -274,34 +391,16 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "84facaab-c7f0-4de8-a773-92c2a2242e60",
-              "parentUUID": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
+              "uuid": "838e1da0-d59f-4c65-88c4-41b9528292b7",
+              "parentUUID": "7ec92390-566f-44e1-b4fb-2fb7e5c3636b",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "ID_00010 Checking getting eBook on the \"Blog\" page.",
-              "fullTitle": "Checking \"Resources\" menu ID_00010 Checking getting eBook on the \"Blog\" page.",
+              "title": "ID_00010 Check getting eBook on the \"Blog\" page.",
+              "fullTitle": "Check \"Blog\" page ID_00010 Check getting eBook on the \"Blog\" page.",
               "timedOut": null,
-              "duration": 8158,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "a7d2fa03-c37c-4ba4-9976-c48b80c7e299",
-              "parentUUID": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "ID_00011 Checking \"Live chat\" form on the Telnyx Developers page.",
-              "fullTitle": "Checking \"Resources\" menu ID_00011 Checking \"Live chat\" form on the Telnyx Developers page.",
-              "timedOut": null,
-              "duration": 3768,
+              "duration": 4647,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -310,25 +409,24 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "3ccfc124-e686-485b-aa24-6eaab30a3bbd",
-              "parentUUID": "48c587a5-6d5e-4ed8-83bb-225fa06f5788",
+              "uuid": "2bb17974-0c52-4e95-826e-04810c882546",
+              "parentUUID": "7ec92390-566f-44e1-b4fb-2fb7e5c3636b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "08ca5f8c-531b-496f-b794-586182e02bae",
-            "b7e5a2d9-b254-4fbc-9257-3b4da1b48790",
-            "5c88d597-8c9d-494f-b6e1-bac83b4f4cc1",
-            "84facaab-c7f0-4de8-a773-92c2a2242e60",
-            "a7d2fa03-c37c-4ba4-9976-c48b80c7e299",
-            "3ccfc124-e686-485b-aa24-6eaab30a3bbd"
+            "69719bc9-e1a6-4f50-ab08-b99cdc98dc7d",
+            "df32055c-0da0-4358-9150-7aad271697be",
+            "e2e7618c-41e6-4ff1-a58e-c5960a118d4b",
+            "838e1da0-d59f-4c65-88c4-41b9528292b7",
+            "2bb17974-0c52-4e95-826e-04810c882546"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 31451,
+          "duration": 23002,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -344,7 +442,65 @@
       "_timeout": 2000
     },
     {
-      "uuid": "67cbb169-bbf2-41c4-bfc3-e4edb8da627c",
+      "uuid": "ecc7ad05-0585-46b1-b8ac-b42e8fc3ff28",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0011.feature",
+      "file": "cypress/e2e/ID0011.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5c40d02b-cfcc-4065-b182-87316e6d763b",
+          "title": "Check \"Live chat\" form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_00011 Check \"Live chat\" form on the Telnyx Developers page.",
+              "fullTitle": "Check \"Live chat\" form ID_00011 Check \"Live chat\" form on the Telnyx Developers page.",
+              "timedOut": null,
+              "duration": 3771,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6207a96c-8a09-4548-9875-25caa3d8eb47",
+              "parentUUID": "5c40d02b-cfcc-4065-b182-87316e6d763b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6207a96c-8a09-4548-9875-25caa3d8eb47"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3771,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0ae88f9f-4ecc-4be7-aafb-bf2f3d66ae56",
       "title": "",
       "fullFile": "cypress/e2e/ID0012.feature",
       "file": "cypress/e2e/ID0012.feature",
@@ -353,94 +509,18 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a8384ef4-87d7-44d2-a4f3-0735cbc7e9e4",
-          "title": "Сhecking banner calculator.",
+          "uuid": "aab1a0e9-aa84-4c8f-b109-078e7d067d3d",
+          "title": "Сheck banner calculator.",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "ID_0012 Checking correct work calculator banner after changing slider-handle.",
-              "fullTitle": "Сhecking banner calculator. ID_0012 Checking correct work calculator banner after changing slider-handle.",
+              "title": "ID_0012 Check correct work calculator banner after changing slider-handle.",
+              "fullTitle": "Сheck banner calculator. ID_0012 Check correct work calculator banner after changing slider-handle.",
               "timedOut": null,
-              "duration": 10567,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "ba79607b-dae8-4862-9755-8964959e5106",
-              "parentUUID": "a8384ef4-87d7-44d2-a4f3-0735cbc7e9e4",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "ba79607b-dae8-4862-9755-8964959e5106"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 10567,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "e070b08c-a24a-4f53-a9fc-f740daa4e1d3",
-      "title": "",
-      "fullFile": "cypress/e2e/ID0013-ID0014.feature",
-      "file": "cypress/e2e/ID0013-ID0014.feature",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "36c6c5d3-9345-4f80-8d69-045b20d287fc",
-          "title": "Checking \"Pricing\" menu",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "ID_0013 Checking Voice API Pricing after choosing country.",
-              "fullTitle": "Checking \"Pricing\" menu ID_0013 Checking Voice API Pricing after choosing country.",
-              "timedOut": null,
-              "duration": 6147,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "b6d6c379-4d7c-4097-b13f-8dd913d38535",
-              "parentUUID": "36c6c5d3-9345-4f80-8d69-045b20d287fc",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "ID_0014 Checking \"Download SIP Trunking pricing\" form.",
-              "fullTitle": "Checking \"Pricing\" menu ID_0014 Checking \"Download SIP Trunking pricing\" form.",
-              "timedOut": null,
-              "duration": 106045,
+              "duration": 101983,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -449,26 +529,24 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {
-                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `#pricing_download_form > div > div > div > div.Text-sc-5o8owa-0.sc-74873084-4.gkWopw.dtWqFL`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `#pricing_download_form > div > div > div > div.Text-sc-5o8owa-0.sc-74873084-4.gkWopw.dtWqFL`, but never found it.\n    at Function.scrollToTheDownloadBanner (cypress/e2e/ID0013-ID0014/ID0013-ID0014Page.cy.js:68:13)\n    at Context.eval (cypress/e2e/ID0013-ID0014/ID0013-ID0014Steps.cy.js:27:12)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `div:nth-child(4) > div.telnyx-slider > div > div.ant-slider-handle`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find element: `div:nth-child(4) > div.telnyx-slider > div > div.ant-slider-handle`, but never found it.\n    at Function.switchSlider (cypress/e2e/PagesObject/CalculatorBannerPage.cy.js:19:11)\n    at Context.eval (cypress/e2e/ID0012/ID0012Steps.cy.js:19:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
                 "diff": null
               },
-              "uuid": "63704b27-0ee0-4688-8665-6418d4d07b86",
-              "parentUUID": "36c6c5d3-9345-4f80-8d69-045b20d287fc",
+              "uuid": "4cd75da7-032c-4416-b249-a09d7a2216e6",
+              "parentUUID": "aab1a0e9-aa84-4c8f-b109-078e7d067d3d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "b6d6c379-4d7c-4097-b13f-8dd913d38535"
-          ],
+          "passes": [],
           "failures": [
-            "63704b27-0ee0-4688-8665-6418d4d07b86"
+            "4cd75da7-032c-4416-b249-a09d7a2216e6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 112192,
+          "duration": 101983,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -484,7 +562,84 @@
       "_timeout": 2000
     },
     {
-      "uuid": "76195469-b2ba-4eff-a392-d05968190cd0",
+      "uuid": "94a0fda7-b964-4872-8035-a2a9ccb1ebe5",
+      "title": "",
+      "fullFile": "cypress/e2e/ID0013-ID0014.feature",
+      "file": "cypress/e2e/ID0013-ID0014.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6b020a4f-d207-4124-a29f-f1c45b1baca7",
+          "title": "Check \"Pricing\" menu",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ID_0013 Check Voice API Pricing after choosing country.",
+              "fullTitle": "Check \"Pricing\" menu ID_0013 Check Voice API Pricing after choosing country.",
+              "timedOut": null,
+              "duration": 5930,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2e6c465b-f482-4088-a91b-13bfbf75796c",
+              "parentUUID": "6b020a4f-d207-4124-a29f-f1c45b1baca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ID_0014 Check \"Download SIP Trunking pricing\" form.",
+              "fullTitle": "Check \"Pricing\" menu ID_0014 Check \"Download SIP Trunking pricing\" form.",
+              "timedOut": null,
+              "duration": 8907,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c68c3d60-3659-40fe-9d65-b8502012018d",
+              "parentUUID": "6b020a4f-d207-4124-a29f-f1c45b1baca7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e6c465b-f482-4088-a91b-13bfbf75796c",
+            "c68c3d60-3659-40fe-9d65-b8502012018d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14837,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "295a8464-288a-4bb1-bf41-917ff46973b1",
       "title": "",
       "fullFile": "cypress/e2e/ID0015.feature",
       "file": "cypress/e2e/ID0015.feature",
@@ -493,7 +648,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "84add403-aceb-4618-9a67-188dd945c235",
+          "uuid": "cf54edef-cc45-41eb-88b4-0362f96f8180",
           "title": "Verify message popup.",
           "fullFile": "",
           "file": "",
@@ -504,29 +659,29 @@
               "title": "ID_0015 Verify message popup on the \"Managed Service Providers\" page.",
               "fullTitle": "Verify message popup. ID_0015 Verify message popup on the \"Managed Service Providers\" page.",
               "timedOut": null,
-              "duration": 5320,
+              "duration": 4910,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "618104b8-f451-4982-9c4e-92170a4c0319",
-              "parentUUID": "84add403-aceb-4618-9a67-188dd945c235",
+              "uuid": "cf3e6782-daa2-4ec9-a1c8-f3bb8c98f928",
+              "parentUUID": "cf54edef-cc45-41eb-88b4-0362f96f8180",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "618104b8-f451-4982-9c4e-92170a4c0319"
+            "cf3e6782-daa2-4ec9-a1c8-f3bb8c98f928"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5320,
+          "duration": 4910,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
